@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="faq.html">
+</head>
+
+<body class="bg-gray-100 ">
+
+    <main>
+
+        <div class="navbar bg-base-100 bg-red-100 flex justify-center">
+            <div class="navbar-start">
+                <!-- <button class="btn bg-lime-400">Blog</button> -->
+                <a href="http://127.0.0.1:5500/faq.html"><button class="btn bg-lime-400">Blog</button></a>
+              
+               
+            </div>
+            <div class="navbar-center">
+                <img src="assets/logo.png" alt="">
+              <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+            </div>
+            <div class="navbar-end">
+                <img src="assets/coin.png" alt="">
+                
+
+                <h1 id="total-money" class="text-xl">5500 BDT</h1>
+
+                
+              
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-6 space-x-4">
+            <div><button id="donation-tab" class="btn  bg-lime-400">Donation</button></div>
+
+            <button id="history-tab" class="btn ">History</button>
+          </div>
+
+
+          <div id="his1" class=" hidden box-border h-32 w-96 p-4 border-4 ...">
+            <h1 id="taka-noakhali" >0 </h1>
+            <p>taka is donated for flood at Noakhali,bangladesh</p>
+          </div>
+
+
+          <div id="his2" class=" hidden box-border h-32 w-96 p-4 border-4 ...">
+            <h1 id="taka-feni"> 0</h1>
+            <p>taka is donated for flood at feni,bangladesh</p>
+          </div>
+
+
+          <div id="his3" class=" hidden box-border h-32 w-96 p-4 border-4 ...">
+            <h1 id="taka-quota" > 00 </h1>
+            <p>taka is donated for Quota Movement,bangladesh</p>
+          </div>
+
+
+          <!-- card section -->
+
+
+          <div id="card-section" class="  flex-row justify-center mx-28 space-y-10">
+            
+
+            <!-- card----1 -->
+
+
+
+            <div  class="card card-side bg-base-100 shadow-xl">
+
+                <figure >
+                    <img src="assets/noakhali.png" alt="">
+                 
+                </figure>
+                <div class="card-body">
+                    <div class="flex">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="zero-button"  class="text-xl">0 BDT</h1></div>
+                        
+                    <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
+                    <p>The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected.</p>
+                    <div class="flex space-x-4 items-center">
+                     
+                      <input id="noakhali" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                      <!-- <button id="donate-btn" class="btn btn-primary w-full">Donate Now</button> -->
+                    </div>
+
+                    <button id="donate-btn" class="btn bg-lime-400" onclick="my_modal_1.showModal()">Donate Now</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Congrats</p>
+    <p>you  have donate for humankind</p>
+    <h1 class="bold"> successfully</h1>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+                    
+
+                   
+                  </div>
+
+                 
+
+                  
+              </div>
+
+              <!-- card----2 -->
+
+
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure>
+                  <img src="assets/feni.png" alt="">
+                </figure>
+                <div class="card-body">
+
+                    <div class="flex">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="zero-button2"  class="text-xl">0 BDT</h1></div>
+                    <h2 class="card-title">Donate for Flood Relief in feni, Bangladesh</h2>
+                    <p>The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected.</p>
+                    <div class="flex space-x-4 items-center">
+                     
+                      <input id="feni" type="number" placeholder="" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                      <!-- <button id="donate-btn2" class="btn btn-primary w-full">Donate Now</button> -->
+                    </div>
+
+                    <button id="donate-btn2" class="btn bg-lime-400" onclick="my_modal_1.showModal()">Donate Now</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Congrats</p>
+    <p> you  have donate for humankind</p>
+    <h1 class="bold"> successfully</h1>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                    
+                  </div>
+              </div>
+
+              <!-- card----3 -->
+
+              <div class="card card-side bg-base-100 shadow-xl">
+                <figure>
+                    <img src="assets/quota-protest.png" alt="">
+                
+                </figure>
+                <div class="card-body">
+                    <div class="flex">
+                        <img src="assets/coin.png" alt="">
+                        <h1 id="zero-button3"  class="text-xl">0 BDT</h1></div>
+                    <h2  class="card-title">Aid for injured the quota movement, Bangladesh</h2>
+                    <p>The recent floods in Noakhali have caused significant damage to homes and infrastructure. Your donation will help provide essential supplies and support to those affected.</p>
+                    <div class="flex space-x-4 items-center">
+                     
+                      <input id="quota" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div class="card-actions justify-end mt-4">
+                      <!-- <button id="donate-btn3" class="btn btn-primary w-full">Donate Now</button> -->
+                    </div>
+
+                    <button id="donate-btn3" class="btn bg-lime-400" onclick="my_modal_1.showModal()">Donate Now</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Congrats</p>
+    <p> you have donate for humankind</p>
+    <h1 class="bold"> successfully</h1>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+                    
+                  </div>
+              </div>
+
+
+
+          </div>
+
+          
+
+
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>
